@@ -138,7 +138,7 @@ func ConvFileToFile(inputFile string, outputFile string) error {
 	return nil
 }
 
-func ConvFileToString(inputFile string, outputFile string) (string, error) {
+func ConvFileToString(inputFile string) (string, error) {
 	content, err := os.ReadFile(inputFile)
 	if err != nil {
 		return "", err
